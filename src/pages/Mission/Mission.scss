@@ -1,0 +1,25 @@
+#mission {
+  background-color: var(--secondary-color);
+  color: var(--white-font);
+}
+
+.mission-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.paypal-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  // position: relative;
+  // top: -1.8rem;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}

@@ -1,0 +1,113 @@
+.brand {
+  background-image: url("../../assets/one-arm-hs-new.jpg");
+  background-clip: border-box;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -120px;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1.4rem;
+
+  & > h1 {
+    color: var(--white-font);
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    letter-spacing: 5px;
+    position: relative;
+    top: -1.8rem;
+
+    & span {
+      color: var(--white-font);
+      color: var(--primary-color);
+    }
+  }
+}
+
+.subscribe-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  position: relative;
+  top: -1.8rem;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bolder;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Tablets
+@media screen and (max-width: 768px) {
+  .brand {
+    background-position: -500px 0;
+    height: 100vh;
+
+    & > h1 {
+      font-size: 3.7rem;
+      letter-spacing: 4px;
+      position: relative;
+      top: -80px;
+    }
+  }
+
+  .subscribe-btn {
+    position: relative;
+    top: -80px;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+// Mobile phones
+@media screen and (max-width: 576px) {
+  .brand {
+    background-position: -600px 0;
+    height: 100vh;
+
+    & > h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+// iPhone 11
+@media screen and (max-width: 414px) {
+  .brand {
+    background-position: -420px 0;
+  }
+}
+
+// Galaxy J7/J5
+@media screen and (max-width: 360px) {
+  .brand > h1 {
+    font-size: 1.7rem;
+  }
+
+  .brand {
+    background-position: -360px 0;
+  }
+}
