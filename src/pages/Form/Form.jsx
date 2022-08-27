@@ -3,18 +3,10 @@ import "./Form.scss"
 const Form = () => {
   return (
     <section id="subscribe">
-      <div class="form-paragraph">
-        <p class="subscribe-paragraph">
-          Join our newsletter for the latest updates about the fitness industry!
-        </p>
-      </div>
-      <form
-        class="subscribe-form"
-        id="subscribe-form"
-        onsubmit="catchSubscription(event)"
-      >
-        <div class="subscribe-name">
-          <label>Enter your name:</label> <br />
+      <p> Join our newsletter & sculpt the body of your dream!</p>
+      <form>
+        <div class="form-div subscribe-name">
+          <label>Enter your name:</label>
           <input
             type="text"
             name="formName"
@@ -22,16 +14,15 @@ const Form = () => {
             placeholder="Your name"
           />
         </div>
-        <div class="subscribe-email">
-          <label>Enter your e-mail:</label> <br />
+        <div class="form-div subscribe-email">
+          <label>Enter your e-mail:</label>
           <input
             name="formEmail"
             id="formEmail"
             placeholder="example@example.com"
           />
-          <br />
         </div>
-        <div class="popup">
+        {/* <div class="popup">
           <button type="submit" class="btn subscribe-btn-top">SUBSCRIBE!</button>
           <div class="popuptext hidden" id="success">
             <p>Thank you for choosing to be part of WILDBOIDES.</p>
@@ -42,7 +33,7 @@ const Form = () => {
           <div class="popuptext-empty-error hidden" id="invalidEmail">
             <p>Invalid E-mail address</p>
           </div>
-        </div>
+        </div> */}
       </form>
     </section>
   )

@@ -81,9 +81,6 @@
 // Mobile phones
 @media screen and (max-width: 576px) {
   .brand {
-    background-position: -600px 0;
-    height: 100vh;
-
     & > h1 {
       font-size: 2rem;
     }
@@ -94,10 +91,10 @@
   }
 }
 
-// iPhone 11
+// iPhone 11 - safari
 @media screen and (max-width: 414px) {
   .brand {
-    background-position: -420px 0;
+    background-position: -500px 0;
   }
 }
 

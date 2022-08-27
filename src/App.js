@@ -1,4 +1,5 @@
 import Features from './pages/Features/Features';
+import Form from './pages/Form/Form';
 import Home from './pages/Home/Home';
 import Mission from './pages/Mission/Mission';
 
@@ -8,6 +9,7 @@ function App() {
       <Home />
       <Mission />
       <Features />
+      <Form />
     </div>
   );
 }
