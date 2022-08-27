@@ -1,15 +1,14 @@
-import "./Mission.scss"
+import "./Mission.scss";
 const Mission = () => {
   return (
     <section id="mission">
       <div class="mission-header">
-        <h1>My Mission</h1>
+        <h2>My Mission</h2>
         <h3>
-          “All good things are <span class="wild">WILD</span> and
-          <span class="free">FREE</span>.”
+          “All good things are <span>wild</span> and <span>free</span>.”
         </h3>
-        <span>
-          ~Henry David Thoreau, <span class="walden">Walden</span>
+        <span className="author">
+          — Henry David Thoreau, <span>Walden</span>
         </span>
       </div>
       <div class="mission-paragraph">
@@ -22,8 +21,7 @@ const Mission = () => {
           experienced before.
         </p>
         <button class="btn paypal-btn">
-          <i class="fab fa-paypal fa-1x"></i> FUND MY
-          MISSION!
+          <i class="fab fa-paypal fa-1x"></i> FUND MY MISSION!
         </button>
       </div>
     </section>

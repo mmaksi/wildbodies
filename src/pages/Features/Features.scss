@@ -1,0 +1,46 @@
+#features {
+  padding: var(--nav-side-margin);
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 70px;
+
+  & .title {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  & h5 {
+    display: inline;
+    margin: 0.5rem;
+  }
+}
+
+// Tablets
+@media screen and (max-width: 768px) {
+}
+
+// Mobile phones
+@media screen and (max-width: 576px) {
+  #features {
+    padding: var(--nav-side-sm-margin);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+// iPhone 11
+@media screen and (max-width: 414px) {
+
+}
+
+// Galaxy J7/J5
+@media screen and (max-width: 360px) {
+
+}

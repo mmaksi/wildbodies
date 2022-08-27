@@ -57,15 +57,16 @@
 
   .nav-logo {
     display: inline;
-    margin-left: 2rem;
+    margin-left: var(--nav-side-sm-margin);
   }
 
   .nav-items-list:last-child {
-    margin-right: 2rem;
+    margin-right: var(--nav-side-sm-margin);
   }
 
   .fa-bars {
     font-size: 1.7rem;
+    color: var(--white-font);
   }
 }
 
