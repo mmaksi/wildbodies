@@ -12,9 +12,6 @@ function App() {
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [btnDisplay, setBtnDisplay] = useState("hidden");
-
-  // console.log(document.body.scrollHeight - (window.scrollY + window.innerHeight))
-  // console.log(window.scrollY + window.innerHeight);
   
   function scrollToTop() {
     // document.body.scrollTop = 0; // For Safari
