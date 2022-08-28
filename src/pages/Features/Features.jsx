@@ -3,9 +3,9 @@ import "./Features.scss";
 const Features = () => {
   return (
     <section id="features">
-      <div class="live-longer">
+      <div className="live-longer">
         <div className="title">
-          <i class="fas fa-heartbeat"></i>
+          <i className="fas fa-heartbeat"></i>
           <h5>Live Longer</h5>
         </div>
         <p>
@@ -14,9 +14,9 @@ const Features = () => {
           like diabetes type 2 and high blood pressure.
         </p>
       </div>
-      <div class="burn-fat">
+      <div className="burn-fat">
         <div className="title">
-          <i class="fas fa-fire-alt"></i>
+          <i className="fas fa-fire-alt"></i>
           <h5>Burn fat</h5>
         </div>
         <p>
@@ -25,9 +25,9 @@ const Features = () => {
           and sculpt your body like an artist.
         </p>
       </div>
-      <div class="home-workout">
+      <div className="home-workout">
         <div className="title">
-          <i class="fas fa-running"></i>
+          <i className="fas fa-running"></i>
           <h5>In-Home Workouts</h5>
         </div>
         <p>

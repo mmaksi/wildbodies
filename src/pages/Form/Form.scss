@@ -33,45 +33,75 @@
     width: 100%;
     padding: 0;
     border: 0;
-    padding: 10px;
+    border-radius: 4px;
+    padding: 10px 0;
+
+    &::placeholder {
+      padding: 10px;
+    }
+  }
+}
+
+.newsletter-btn {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 30%;
+  background-color: var(--white-font);
+  color: var(--secondary-color);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    letter-spacing: 1px;
   }
 }
 
 // Mobile phones
 @media screen and (max-width: 576px) {
-    #subscribe {
-        padding: 3rem var(--nav-side-sm-margin);
+  #subscribe {
+    padding: 3rem var(--nav-side-sm-margin);
+  }
+
+  .form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    gap: 8px;
+
+    & input {
+      width: 94%;
+      padding: 0;
+      border: 0;
+      border-radius: 4px;
+      padding: 15px 10px;
+
+      &::placeholder {
+        font-size: 1rem;
+        padding: 10px;
       }
-      
-      .form-div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: center;
-        gap: 8px;
-      
-        & input {
-          width: 94%;
-          padding: 0;
-          border: 0;
-          border-radius: 4px;
-          padding: 15px 10px;
-
-          &::placeholder {
-            font-size: 1rem;
-          }
-        }
-      }
+    }
   }
+
+  .newsletter-btn {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    width: 100%;
+    background-color: var(--white-font);
+    color: var(--secondary-color);
   
-  // iPhone 11 - safari
-  @media screen and (max-width: 414px) {
-
+    &:hover {
+      cursor: pointer;
+      background-color: var(--primary-color);
+      letter-spacing: 1px;
+    }
   }
-  
-  // Galaxy J7/J5
-  @media screen and (max-width: 360px) {
-
-  }
+}
