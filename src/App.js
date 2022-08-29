@@ -11,7 +11,6 @@ import { ReactComponent as Arrow } from "./assets/arrow-up-2.svg";
 function App() {
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const [btnDisplay, setBtnDisplay] = useState("hidden");
   
   function scrollToTop() {
     // document.body.scrollTop = 0; // For Safari
@@ -23,7 +22,6 @@ function App() {
     const onScroll = (e) => {
       setScrollTop(e.target.documentElement.scrollTop);
       scrollTop <= 600 ? setScrolling(false) : setScrolling(true);
-      scrolling ? setBtnDisplay("block") : setBtnDisplay("hidden");
     };
     window.addEventListener("scroll", onScroll);
 
